@@ -1,6 +1,9 @@
 ﻿#pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
 #pragma warning disable CS0436
 
+#if UNITASK_NETCORE || UNITY_2022_3_OR_NEWER
+#define SUPPORT_VALUETASK
+#endif
 using Cysharp.Threading.Tasks.CompilerServices;
 using System;
 using System.Diagnostics;
@@ -69,7 +72,7 @@ namespace Cysharp.Threading.Tasks
             return new UniTask<bool>(new IsCanceledSource(source), token);
         }
 
-#if !UNITY_2018_3_OR_NEWER
+#if SUPPORT_VALUETASK
 
         public static implicit operator System.Threading.Tasks.ValueTask(in UniTask self)
         {
@@ -78,7 +81,7 @@ namespace Cysharp.Threading.Tasks
                 return default;
             }
 
-#if NETSTANDARD2_0
+#if (UNITASK_NETCORE && NETSTANDARD2_0)
             return self.AsValueTask();
 #else
             return new System.Threading.Tasks.ValueTask(self.source, self.token);
@@ -440,7 +443,7 @@ namespace Cysharp.Threading.Tasks
             return self.AsUniTask();
         }
 
-#if !UNITY_2018_3_OR_NEWER
+#if SUPPORT_VALUETASK
 
         public static implicit operator System.Threading.Tasks.ValueTask<T>(in UniTask<T> self)
         {
@@ -449,7 +452,7 @@ namespace Cysharp.Threading.Tasks
                 return new System.Threading.Tasks.ValueTask<T>(self.result);
             }
 
-#if NETSTANDARD2_0
+#if (UNITASK_NETCORE && NETSTANDARD2_0)
             return self.AsValueTask();
 #else
             return new System.Threading.Tasks.ValueTask<T>(self.source, self.token);
