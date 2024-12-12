@@ -262,7 +262,11 @@ namespace Cysharp.Threading.Tasks
                 {
                     if (!(cancelImmediately && cancellationToken.IsCancellationRequested))
                     {
-                    TryReturn();
+                        TryReturn();
+                    }
+                    else
+                    {
+                        TaskTracker.RemoveTracking(this);
                     }
                 }
             }
@@ -369,7 +373,11 @@ namespace Cysharp.Threading.Tasks
                 {
                     if (!(cancelImmediately && cancellationToken.IsCancellationRequested))
                     {
-                    TryReturn();
+                        TryReturn();
+                    }
+                    else
+                    {
+                        TaskTracker.RemoveTracking(this);
                     }
                 }
             }
@@ -478,7 +486,11 @@ namespace Cysharp.Threading.Tasks
                 {
                     if (!(cancelImmediately && cancellationToken.IsCancellationRequested))
                     {
-                    TryReturn();
+                        TryReturn();
+                    }
+                    else
+                    {
+                        TaskTracker.RemoveTracking(this);
                     }
                 }
             }
@@ -607,7 +619,11 @@ namespace Cysharp.Threading.Tasks
                 {
                     if (!(cancelImmediately && cancellationToken.IsCancellationRequested))
                     {
-                    TryReturn();
+                        TryReturn();
+                    }
+                    else
+                    {
+                        TaskTracker.RemoveTracking(this);
                     }
                 }
             }
@@ -753,7 +769,11 @@ namespace Cysharp.Threading.Tasks
                 {
                     if (!(cancelImmediately && cancellationToken.IsCancellationRequested))
                     {
-                    TryReturn();
+                        TryReturn();
+                    }
+                    else
+                    {
+                        TaskTracker.RemoveTracking(this);
                     }
                 }
             }
@@ -881,7 +901,11 @@ namespace Cysharp.Threading.Tasks
                 {
                     if (!(cancelImmediately && cancellationToken.IsCancellationRequested))
                     {
-                    TryReturn();
+                        TryReturn();
+                    }
+                    else
+                    {
+                        TaskTracker.RemoveTracking(this);
                     }
                 }
             }
@@ -1007,7 +1031,11 @@ namespace Cysharp.Threading.Tasks
                 {
                     if (!(cancelImmediately && cancellationToken.IsCancellationRequested))
                     {
-                    TryReturn();
+                        TryReturn();
+                    }
+                    else
+                    {
+                        TaskTracker.RemoveTracking(this);
                     }
                 }
             }

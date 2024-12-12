@@ -4,6 +4,7 @@
 #if UNITASK_NETCORE || UNITY_2022_3_OR_NEWER
 #define SUPPORT_VALUETASK
 #endif
+
 using Cysharp.Threading.Tasks.CompilerServices;
 using System;
 using System.Diagnostics;
@@ -121,7 +122,7 @@ namespace Cysharp.Threading.Tasks
                 this.source.GetResult(this.token);
                 return CompletedTasks.AsyncUnit;
             }
-            else if(this.source is IUniTaskSource<AsyncUnit> asyncUnitSource)
+            else if (this.source is IUniTaskSource<AsyncUnit> asyncUnitSource)
             {
                 return new UniTask<AsyncUnit>(asyncUnitSource, this.token);
             }
