@@ -1,5 +1,9 @@
 # Changelog
 
+## [2.5.13](https://github.com/GameFrameX/com.gameframex.unity.cysharp.unitask/tree/2.5.13) (2025-06-01)
+
+[Full Changelog](https://github.com/GameFrameX/com.gameframex.unity.cysharp.unitask/compare/2.5.12...2.5.13)
+
 ## [2.5.12](https://github.com/GameFrameX/com.gameframex.unity.cysharp.unitask/tree/2.5.12) (2025-05-31)
 
 [Full Changelog](https://github.com/GameFrameX/com.gameframex.unity.cysharp.unitask/compare/2.5.11...2.5.12)
