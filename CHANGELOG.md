@@ -1,3 +1,10 @@
+# [2.6.0](https://github.com/gameframex/com.gameframex.unity.cysharp.unitask/compare/2.5.13...2.6.0) (2025-12-23)
+
+
+### Features
+
+* **ci:** change ci ([3ff8f92](https://github.com/gameframex/com.gameframex.unity.cysharp.unitask/commit/3ff8f920c3ca9f0d1329449d7739e899906d87cc))
+
 # Changelog
 
 ## [2.5.13](https://github.com/GameFrameX/com.gameframex.unity.cysharp.unitask/tree/2.5.13) (2025-06-01)
