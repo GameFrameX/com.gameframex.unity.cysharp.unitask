@@ -2,8 +2,9 @@
   "name": "com.gameframex.unity.cysharp.unitask",
   "displayName": "UniTask",
   "author": {
-    "name": "Cysharp, Inc.",
-    "url": "https://cysharp.co.jp/en/"
+    "name": "Blank",
+    "email": "alianblank@outlook.com",
+    "url": "https://gameframex.doc.alianblank.com"
   },
   "version": "2.5.13",
   "unity": "2018.4",
@@ -16,5 +17,19 @@
   ],
   "license": "MIT",
   "category": "Task",
-  "dependencies": {}
+  "dependencies": {},
+  "devDependencies": {
+    "semantic-release": "^24.2.0",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://npm.cnb.cool/GameFrameX/npm/-/packages/"
+  },
+  "repository": {
+    "name": "com.gameframex.unity.cysharp.unitask",
+    "url": "git+https://github.com/gameframex/com.gameframex.unity.cysharp.unitask.git",
+    "type": "git"
+  }
 }
