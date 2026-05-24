@@ -7,7 +7,7 @@
     "url": "https://gameframex.doc.alianblank.com"
   },
   "version": "2.6.0",
-  "unity": "2018.4",
+  "unity": "2019.4",
   "description": "Provides an efficient async/await integration to Unity.",
   "keywords": [
     "async/await",
