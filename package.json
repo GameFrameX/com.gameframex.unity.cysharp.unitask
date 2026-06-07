@@ -31,5 +31,8 @@
     "name": "com.gameframex.unity.cysharp.unitask",
     "url": "git+https://github.com/gameframex/com.gameframex.unity.cysharp.unitask.git",
     "type": "git"
-  }
+  },
+  "documentationUrl": "https://gameframex.doc.alianblank.com",
+  "changelogUrl": "https://github.com/gameframex/com.gameframex.unity.cysharp.unitask/blob/main/CHANGELOG.md",
+  "licensesUrl": "https://github.com/gameframex/com.gameframex.unity.cysharp.unitask/blob/main/LICENSE.md"
 }
