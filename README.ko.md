@@ -77,6 +77,21 @@ UniTask 커밋 기반: https://github.com/Cysharp/UniTask/commit/5cc97c7f0085624
 - 저장소: https://github.com/GameFrameX/com.gameframex.unity.cysharp.unitask
 - 이슈: https://github.com/GameFrameX/com.gameframex.unity.cysharp.unitask/issues
 
+
+## 의존성
+
+| 패키지 | 설명 |
+|--------|------|
+| (无) | - |
+
+
+## 커뮤니티 및 지원
+
+- QQ 그룹: 467608841 / 233840761
+
+## 변경 로그
+
+[Releases](https://github.com/GameFrameX/gameframex/com.gameframex.unity.cysharp.unitask/releases)에서 변경 로그를 확인하세요.
 ## 라이선스
 
 UniTask는 [MIT](https://github.com/Cysharp/UniTask/blob/master/LICENSE) 라이선스에 따라 배포됩니다.

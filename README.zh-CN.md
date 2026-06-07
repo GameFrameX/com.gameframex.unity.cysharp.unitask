@@ -77,6 +77,21 @@ Then add the package to `dependencies`:
 - 仓库地址: https://github.com/GameFrameX/com.gameframex.unity.cysharp.unitask
 - 问题反馈: https://github.com/GameFrameX/com.gameframex.unity.cysharp.unitask/issues
 
+
+## 依赖
+
+| 包 | 说明 |
+|----|------|
+| (无) | - |
+
+
+## 社区与支持
+
+- QQ群: 467608841 / 233840761
+
+## 更新日志
+
+查看 [Releases](https://github.com/GameFrameX/gameframex/com.gameframex.unity.cysharp.unitask/releases) 了解更新日志。
 ## 开源协议
 
 UniTask 遵循 [MIT](https://github.com/Cysharp/UniTask/blob/master/LICENSE) 许可证。

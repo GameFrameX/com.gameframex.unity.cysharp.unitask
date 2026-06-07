@@ -77,6 +77,21 @@ Based on UniTask commit: https://github.com/Cysharp/UniTask/commit/5cc97c7f00856
 - Repository: https://github.com/GameFrameX/com.gameframex.unity.cysharp.unitask
 - Issues: https://github.com/GameFrameX/com.gameframex.unity.cysharp.unitask/issues
 
+
+## Dependencies
+
+| Package | Description |
+|---------|-------------|
+| (无) | - |
+
+
+## Community & Support
+
+- QQ Group: 467608841 / 233840761
+
+## Changelog
+
+See [Releases](https://github.com/GameFrameX/gameframex/com.gameframex.unity.cysharp.unitask/releases) for changelog.
 ## License
 
 UniTask is licensed under the [MIT](https://github.com/Cysharp/UniTask/blob/master/LICENSE) license.
