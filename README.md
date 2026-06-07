@@ -35,25 +35,36 @@ This library primarily serves as a submodule for [GameFrameX](https://github.com
 
 ## Quick Start
 
-### System Requirements
-
-- Unity 2018.4 or higher
-
 ### Installation
 
-Choose one of the following methods:
+Edit your Unity project's `Packages/manifest.json` and add the `scopedRegistries` section:
 
-1. Add the following to your project's `manifest.json` file:
-   ```json
-   {"com.gameframex.unity.cysharp.unitask": "https://github.com/AlianBlank/com.gameframex.unity.cysharp.unitask.git"}
-   ```
+```json
+{
+  "scopedRegistries": [
+    {
+      "name": "GameFrameX",
+      "url": "https://gameframex.upm.alianblank.uk",
+      "scopes": [
+        "com.gameframex"
+      ]
+    }
+  ]
+}
+```
 
-2. Use `Git URL` in Unity's Package Manager:
-   ```
-   https://github.com/AlianBlank/com.gameframex.unity.cysharp.unitask.git
-   ```
+`scopes` controls which packages are resolved through this registry. Only packages whose names start with `com.gameframex` will be fetched from it.
 
-3. Download the repository and place it in your Unity project's `Packages` directory. It will be loaded automatically.
+Then add the package to `dependencies`:
+
+```json
+{
+  "dependencies": {
+    "com.gameframex.unity.cysharp.unitask": "2.6.0"
+  }
+}
+```
+
 
 ## Sync Version
 

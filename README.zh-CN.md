@@ -35,25 +35,36 @@ Game Frame X UniTask 是基于 [UniTask](https://github.com/Cysharp/UniTask) 的
 
 ## 快速开始
 
-### 系统要求
-
-- Unity 2018.4 或更高版本
-
 ### 安装
 
-任选以下方式之一：
+编辑 Unity 项目的 `Packages/manifest.json`，添加 `scopedRegistries` 部分：
 
-1. 直接在 `manifest.json` 文件中添加以下内容：
-   ```json
-   {"com.gameframex.unity.cysharp.unitask": "https://github.com/AlianBlank/com.gameframex.unity.cysharp.unitask.git"}
-   ```
+```json
+{
+  "scopedRegistries": [
+    {
+      "name": "GameFrameX",
+      "url": "https://gameframex.upm.alianblank.uk",
+      "scopes": [
+        "com.gameframex"
+      ]
+    }
+  ]
+}
+```
 
-2. 在 Unity 的 `Packages Manager` 中使用 `Git URL` 的方式添加库，地址为：
-   ```
-   https://github.com/AlianBlank/com.gameframex.unity.cysharp.unitask.git
-   ```
+`scopes` 控制哪些包通过此注册表解析。只有以 `com.gameframex` 开头的包才会从这个注册表获取。
 
-3. 直接下载仓库放置到 Unity 项目的 `Packages` 目录下，会自动加载识别。
+Then add the package to `dependencies`:
+
+```json
+{
+  "dependencies": {
+    "com.gameframex.unity.cysharp.unitask": "2.6.0"
+  }
+}
+```
+
 
 ## 同步版本
 

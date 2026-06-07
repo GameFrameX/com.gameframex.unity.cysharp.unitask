@@ -35,25 +35,36 @@ Game Frame X UniTask は [UniTask](https://github.com/Cysharp/UniTask) の修正
 
 ## クイックスタート
 
-### 動作環境
-
-- Unity 2018.4 以上
-
 ### インストール
 
-以下のいずれかの方法を選択してください：
+Unity プロジェクトの `Packages/manifest.json` を編集し、`scopedRegistries` セクションを追加してください：
 
-1. プロジェクトの `manifest.json` ファイルに以下を追加：
-   ```json
-   {"com.gameframex.unity.cysharp.unitask": "https://github.com/AlianBlank/com.gameframex.unity.cysharp.unitask.git"}
-   ```
+```json
+{
+  "scopedRegistries": [
+    {
+      "name": "GameFrameX",
+      "url": "https://gameframex.upm.alianblank.uk",
+      "scopes": [
+        "com.gameframex"
+      ]
+    }
+  ]
+}
+```
 
-2. Unity の Package Manager で `Git URL` を使用：
-   ```
-   https://github.com/AlianBlank/com.gameframex.unity.cysharp.unitask.git
-   ```
+`scopes` は、どのパッケージをこのレジストリから解決するかを制御します。`com.gameframex` で始まるパッケージのみがこのレジストリから取得されます。
 
-3. リポジトリをダウンロードして Unity プロジェクトの `Packages` ディレクトリに配置。自動的にロードされます。
+Then add the package to `dependencies`:
+
+```json
+{
+  "dependencies": {
+    "com.gameframex.unity.cysharp.unitask": "2.6.0"
+  }
+}
+```
+
 
 ## 同期バージョン
 
