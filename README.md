@@ -37,35 +37,36 @@ This library primarily serves as a submodule for [GameFrameX](https://github.com
 
 ### Installation
 
-Edit your Unity project's `Packages/manifest.json` and add the `scopedRegistries` section:
+Choose one of the following methods:
 
-```json
-{
-  "scopedRegistries": [
-    {
-      "name": "GameFrameX",
-      "url": "https://gameframex.upm.alianblank.uk",
-      "scopes": [
-        "com.gameframex"
-      ]
-    }
-  ]
-}
-```
+1. Edit your Unity project's `Packages/manifest.json` and add the `scopedRegistries` section:
+   ```json
+   {
+     "scopedRegistries": [
+       {
+         "name": "GameFrameX",
+         "url": "https://gameframex.upm.alianblank.uk",
+         "scopes": [
+           "com.gameframex"
+         ]
+       }
+     ],
+     "dependencies": {
+       "com.gameframex.unity.cysharp.unitask": "2.6.0"
+     }
+   }
+   ```
 
-`scopes` controls which packages are resolved through this registry. Only packages whose names start with `com.gameframex` will be fetched from it.
+   `scopes` controls which packages are resolved through this registry. Only packages whose names start with `com.gameframex` will be fetched from it.
 
-Then add the package to `dependencies`:
-
-```json
-{
-  "dependencies": {
-    "com.gameframex.unity.cysharp.unitask": "2.6.0"
-  }
-}
-```
-
-
+2. Add to `manifest.json` dependencies:
+   ```json
+   {
+      "com.gameframex.unity.cysharp.unitask": "https://github.com/gameframex/com.gameframex.unity.cysharp.unitask.git"
+   }
+   ```
+3. Use **Package Manager** in Unity with **Git URL**: `https://github.com/gameframex/com.gameframex.unity.cysharp.unitask.git`
+4. Clone the repository into your Unity project's `Packages` directory. It will be loaded automatically.
 ## Sync Version
 
 Based on UniTask commit: https://github.com/Cysharp/UniTask/commit/5cc97c7f0085624b6ef57853d70b404440060cef
