@@ -1,3 +1,11 @@
+## [2.6.1](https://github.com/gameframex/com.gameframex.unity.cysharp.unitask/compare/2.6.0...2.6.1) (2026-06-08)
+
+
+### Bug Fixes
+
+* 统一 LICENSE.md 为 Apache 2.0 (自有仓库) ([91594a6](https://github.com/gameframex/com.gameframex.unity.cysharp.unitask/commit/91594a60cfabb48248dbbc3563aabe8b89ddfa11))
+* 补全包规范文件（LICENSE/CHANGELOG/URL 字段/unity 字段） ([6d5fd6e](https://github.com/gameframex/com.gameframex.unity.cysharp.unitask/commit/6d5fd6e8516fcff57d8714beb2a5191c92381a43))
+
 # [2.6.0](https://github.com/gameframex/com.gameframex.unity.cysharp.unitask/compare/2.5.13...2.6.0) (2025-12-23)
 
 
