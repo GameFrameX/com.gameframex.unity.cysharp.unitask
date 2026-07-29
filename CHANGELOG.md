@@ -1,3 +1,10 @@
+## [2.6.2](https://github.com/gameframex/com.gameframex.unity.cysharp.unitask/compare/2.6.1...2.6.2) (2026-07-29)
+
+
+### Bug Fixes
+
+* support Unity 6 generic TreeView APIs in UniTask Tracker ([470c10d](https://github.com/gameframex/com.gameframex.unity.cysharp.unitask/commit/470c10d82a77d8af40452c69d007544eadae5296))
+
 ## [2.6.1](https://github.com/gameframex/com.gameframex.unity.cysharp.unitask/compare/2.6.0...2.6.1) (2026-06-08)
 
 
