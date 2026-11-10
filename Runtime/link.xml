@@ -1,14 +1,8 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <linker>
-    <assembly fullname="UniTask.Runtime" preserve="all">
-        <namespace fullname="Cysharp.Threading.Tasks" preserve="all"/>
-        <namespace fullname="Cysharp.Threading.Tasks.Linq" preserve="all"/>
-        <namespace fullname="Cysharp.Threading.Tasks.Triggers" preserve="all"/>
-        <namespace fullname="Cysharp.Threading.Tasks.CompilerServices" preserve="all"/>
-    </assembly>
-    <assembly fullname="UniTask.Runtime.Linq" preserve="all">
-    </assembly>
-    <assembly fullname="UniTask.Runtime.DOTween" preserve="all">
-        <namespace fullname="Cysharp.Threading.Tasks" preserve="all"/>
-    </assembly>
+    <assembly fullname="UniTask.Runtime" preserve="all"/>
+    <assembly fullname="UniTask.Runtime.Addressables" preserve="all"/>
+    <assembly fullname="UniTask.Runtime.DOTween" preserve="all"/>
+    <assembly fullname="UniTask.Runtime.Linq" preserve="all"/>
+    <assembly fullname="UniTask.Runtime.TextMeshPro" preserve="all"/>
 </linker>
