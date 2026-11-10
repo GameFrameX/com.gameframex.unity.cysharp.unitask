@@ -1,3 +1,10 @@
+## [2.6.3](https://github.com/gameframex/com.gameframex.unity.cysharp.unitask/compare/2.6.2...2.6.3) (2026-11-10)
+
+
+### Bug Fixes
+
+* **cysharp.unitask:** 添加完整 link.xml 防代码裁剪保护 ([17a3d7b](https://github.com/gameframex/com.gameframex.unity.cysharp.unitask/commit/17a3d7b4cec7e00efe267072cb6f1c55daaa87e9))
+
 ## [2.6.2](https://github.com/gameframex/com.gameframex.unity.cysharp.unitask/compare/2.6.1...2.6.2) (2026-07-29)
 
 
